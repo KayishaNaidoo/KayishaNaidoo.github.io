@@ -1,0 +1,771 @@
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url('../fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url('../fonts/Jost-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Babas";
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Handjet";
+    src: url('../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf');
+}
+
+a{
+   text-decoration: none;
+   color:  #ab20fd; 
+}
+
+.title-image {
+    display: flex;
+    justify-content: center;
+    align-items: left;    
+    height: 50vh;          
+ }
+ 
+ .title-image img {
+    object-fit: contain;    
+    max-width: 100%;        
+    max-height: 100%;       
+ }
+ 
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+
+body {
+    font-family: 'Poppins-Medium', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;                
+    align-items: center;          
+    gap: 20px;                  
+}
+
+.profile-intro {
+
+    font-size: 70px; 
+    font-weight: bold;
+}
+
+.profile-sub{
+    font-size: 22px;
+
+}
+
+
+
+.game {
+    font-size: 30px;
+    font-family: Handjet;
+    color: #ab20fd; 
+}
+
+.highlight {
+    color: #ab20fd; 
+}
+
+.section h2 {
+    font-size: 36px; 
+    color: #ab20fd;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 900;
+    color: #ab20fd;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #121212;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(213, 195, 195, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: contain;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.2);
+    }
+    15% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 5px 0;
+    font-size: large;
+    font-family: 'Poppins-Medium', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px 10px; 
+    border: 2px solid; 
+    border-radius: 50px; 
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D effect with shadow */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative; 
+    outline: none;
+}
+.sidebar nav ul li:hover{
+    box-shadow: 0 5px 0 #ab20fd, 0 15px 30px rgba(0, 0, 0, 0.6); 
+        transform: translateY(-2px); 
+}
+.sidebar nav ul li:active{
+    transform: translateY(4px); /* Button moves down on click */
+    box-shadow: 0 2px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+
+
+#starsCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure it is above the stars background */
+    text-align: center;
+    padding: 50px;
+    color: white;
+    margin-left: 270px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+}
+
+
+
+
+.section {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid; 
+    border-image: WHITE;
+    border-radius: 0; 
+  
+}
+
+.section-profile {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+
+.section-profile.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* About Me Section Styles */
+.hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.hobby-card {
+    background-color: #670f9b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards; 
+    animation-delay: 0s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: adds a slight movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hobby-card:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.hobby-card:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.hobby-card:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+.hobby-card:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+.hobby-card:nth-child(5) {
+    animation-delay: 2.0s;
+}
+.hobby-card:nth-child(6) {
+    animation-delay: 2.4s;
+}
+
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.hobby-card h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 0;
+}
+
+/* Likes and Dislikes Containers */
+
+.likes-dislikes-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.likes-container, .dislikes-container {
+    width: 45%;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+h3 {
+    margin-bottom: 10px; 
+}
+
+.likes-container ul,
+.dislikes-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.likes-container li,
+.dislikes-container li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color:transparent;
+    border-radius: 5px;
+    color: #d1d1d1;
+}
+
+.likes-container li:hover,
+.dislikes-container li:hover {
+    background-color: #333;
+}
+
+
+.career-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 50px;
+    padding: 20px 0;
+    justify-items: center; /* Ensures cards are centered within each grid cell */
+}
+
+.career-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive: Adjust number of columns based on screen size */
+    gap: 50px;
+    padding: 20px 0;
+    justify-items: center; /* Ensures cards are centered within each grid cell */
+}
+
+.career-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative; /* Allows positioning elements within the card */
+}
+
+/* Card Image */
+.career-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px; 
+}
+
+/* Card Title */
+.career-card h3 {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 40px; /* Increased font size */
+    color: #ab20fd;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.career-card .role {
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 16px;
+    color: #fff;
+
+    text-align: center;
+}
+
+/* Card Description */
+.career-card .description {
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 16px;
+    color: #d1d1d1;
+    text-align: left; 
+    margin-bottom: 12px;
+}
+
+/* Bullet List (Hearts) */
+.career-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+
+/* Card Hover Effect */
+.career-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.contact-info p {
+    margin: 5px 0;
+    
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #ab20fd;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skill-card {
+    border-radius: 8px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #ab20fd;
+    margin-bottom: 15px;
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-card ul li {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card ul li:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    body{
+        padding: 20px;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .profile-container {
+        flex-direction: column;   /* Stack text above the image */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+
+    .title-image {
+        width: 100%;   
+        height:auto;          /* Make the image responsive */
+     /* Set a max-width for the image */
+    }
+
+
+
+    .profile-img {
+        width: 60%;
+       
+    }
+
+    .sidebar h2 {
+        font-size: 24px;
+    }
+
+    .sidebar nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar nav ul.active {
+        display: flex; 
+    }
+
+    .sidebar nav ul li {
+        padding: 0px;
+        margin: 10;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .dropdown-toggle {
+        font-size: large;
+        font-family: 'Poppins-Medium', sans-serif;
+        color: white;
+        margin-bottom: 10px;
+        padding: 12px 25px; 
+        border: 2px solid; 
+         
+        border-radius: 50px; 
+        background-color: #1e1e1e;
+        box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D effect with shadow */
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        position: relative; 
+        outline: none;
+    }
+    
+    /* Hover Effect */
+    .dropdown-toggle:hover {
+        box-shadow: 0 5px 0 #ab20fd, 0 15px 30px rgba(0, 0, 0, 0.6); 
+        transform: translateY(-2px); 
+    }
+    
+    /* Active (Clicked) Effect */
+    .dropdown-toggle:active {
+        transform: translateY(4px); /* Button moves down on click */
+        box-shadow: 0 2px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Glowing Effect */
+    .dropdown-toggle:before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        background: linear-gradient(45deg, #7d12ff, #ab20fd, #200589);
+        filter: blur(15px);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .dropdown-toggle:hover:before {
+        opacity: 0.5; 
+    }
+    
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #121212;
+}
+
+
+.timeline-item {
+    position: relative;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-left: 6px solid #ab20fd;
+    padding-left: 50px; /* Adjust based on the heart size */
+    animation: fadeInAnimation 1s ease-in-out;
+}
+
+.timeline-item::before {
+    content: '\2764'; /* Unicode heart character */
+    font-size: 40px; /* Adjust size as needed */
+    color: #d496f8; /* Heart color */
+    position: absolute;
+    animation: beat 2s ease-in-out infinite;;
+    left: -13px; /* Adjust to position the heart correctly */
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%); /* Center the heart vertically */
+}
+
+/* styles.css */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.contact-icon {
+    color: #ab20fd; /* Icon color */
+    font-size: 24px; /* Icon size */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.contact-icon:hover {
+    color: #fff; /* Change color on hover */
+}
+
+
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -5px;
+    }
+
+    .career-section {
+        grid-template-columns: 1fr; 
+    }
+
+    .career-cards {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+        gap: 20px; /* Reduced space between cards on mobile screens */
+    }
+    }
+
+
+
+
+@media (min-width: 769px) {
+
+    .career-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+    }
+    .dropdown-toggle {
+        display: none; 
+    }
+}
