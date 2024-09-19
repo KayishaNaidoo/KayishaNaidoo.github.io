@@ -135,7 +135,9 @@ h2 {
     justify-content: start;
     align-items: center;
     transition: all 0.3s ease;
+    overflow-y: scroll; 
 }
+
 
 .profile-img {
     width: 150px;
@@ -431,15 +433,15 @@ h3 {
     grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
     gap: 50px;
     padding: 20px 0;
-    justify-items: center; /* Ensures cards are centered within each grid cell */
+    justify-items: center; 
 }
 
 .career-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive: Adjust number of columns based on screen size */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 50px;
     padding: 20px 0;
-    justify-items: center; /* Ensures cards are centered within each grid cell */
+    justify-items: center; 
 }
 
 .career-card {
@@ -452,7 +454,7 @@ h3 {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    position: relative; /* Allows positioning elements within the card */
+    position: relative; 
 }
 
 /* Card Image */
