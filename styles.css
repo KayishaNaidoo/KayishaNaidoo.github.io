@@ -446,8 +446,15 @@ h3 {
     margin-bottom: 10px;
     padding: 10px;
     background-color:transparent;
-    border-radius: 5px;
-    color: #d1d1d1;
+    border-radius: 50px; 
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); 
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative; 
+    outline: none;
 }
 
 .likes-container li:hover,
@@ -559,6 +566,7 @@ h3 {
     gap: 20px;
 }
 
+
 .skill-card {
     border-radius: 8px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
@@ -584,20 +592,69 @@ h3 {
     padding: 10px;
     margin-bottom: 8px;
     border-radius: 5px;
-   
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+    position: relative;
+}
+.flip-front img {
+    width: 40px; 
+    height: 40px; 
+    object-fit: cover; 
+}
+
+
+.btn {
+    display: block;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    perspective: 1000px; 
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease; 
+}
+
+.flip-front {
+    color: white;
+    border: 2px solid #ab20fd;
+    background-color: transparent;
+}
+
+.flip-back {
+    color: #fff;
+    background-color: #313131;
+    transform: rotateY(180deg); 
+}
+
+.btn:hover .flip-front {
+    transform: rotateY(180deg); 
+}
+
+.btn:hover .flip-back {
+    transform: rotateY(0deg); 
 }
 
 .skill-card ul li:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); 
 }
 
 .skill-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on card hover */
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     body{
         padding: 20px;
@@ -669,7 +726,7 @@ h3 {
          
         border-radius: 50px; 
         background-color: #1e1e1e;
-        box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D effect with shadow */
+        box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); 
         text-transform: uppercase;
         letter-spacing: 1.5px;
         transition: all 0.2s ease;
@@ -767,9 +824,12 @@ h3 {
 
 
 @media (max-width: 600px) {
+    .profile-intro {
+        font-size: 40px; 
+        font-weight: bold;
+    }
     .section h2 {
         font-size: 30px; 
-        color: red;
     }
     .timeline {
         padding-left: 20px;
@@ -801,7 +861,7 @@ h3 {
 
 @media (min-width: 601px) {
     .section h2 {
-        font-size: 36px; 
+        font-size: 40px; 
     }
 
     .career-section {
@@ -813,3 +873,72 @@ h3 {
         display: none; 
     }
 }
+
+
+/* .btn {
+    height: 50px;
+    width: fit-content;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+  
+  .text {
+    padding: 0 50px;
+    visibility: hidden;
+  }
+  
+  .flip-front, 
+  .flip-back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform-style: flat;
+      transform-style: flat;
+      -webkit-transition: -webkit-transform .3s ease-out;
+      -o-transition: -o-transform .3s ease-out;
+      transition: transform .3s ease-out;
+  }
+  
+  .flip-front {
+      color: #ab20fd;
+      border: 2px solid white;
+      background-color: transparent;
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  }
+  
+  .flip-back {
+    color: black;
+    background-color: #ab20fd;
+    border: 2px solid #ab20fd;
+    -webkit-transform: rotateX(90deg) translateZ(25px);
+    -ms-transform: rotateX(90deg) translateZ(25px);
+    -o-transform: rotateX(90deg) translateZ(25px);
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-front {
+      -webkit-transform: rotateX(-90deg) translateZ(25px);
+      -ms-transform: rotateX(-90deg) translateZ(25px);
+      -o-transform: rotateX(-90deg) translateZ(25px);
+      transform: rotateX(-90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-back {
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  } */
