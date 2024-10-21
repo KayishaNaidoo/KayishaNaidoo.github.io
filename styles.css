@@ -596,9 +596,9 @@ h3 {
     position: relative;
 }
 .flip-front img {
-    width: 40px; 
-    height: 40px; 
-    object-fit: cover; 
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; 
 }
 
 
