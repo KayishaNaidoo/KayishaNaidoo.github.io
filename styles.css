@@ -769,7 +769,7 @@ h3 {
 @media (max-width: 600px) {
     .section h2 {
         font-size: 20px; 
-        color: red;
+        color: blue;
     }
     .timeline {
         padding-left: 20px;
