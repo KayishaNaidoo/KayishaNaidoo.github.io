@@ -766,9 +766,9 @@ h3 {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .section h2 {
-        font-size: 30px; 
+        font-size: 20px; 
         color: red;
     }
     .timeline {
@@ -793,10 +793,10 @@ h3 {
 
 
 @media (min-width: 769px) {
-
-    h2{
+    .section h2 {
         font-size: 30px; 
     }
+
     .career-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
