@@ -769,8 +769,9 @@ h3 {
 @media (max-width: 768px) {
     h2{
         font-size: 30px; 
+        color: red;
     }
-    
+
     .timeline {
         padding-left: 20px;
     }
