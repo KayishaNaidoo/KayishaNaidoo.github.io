@@ -109,7 +109,7 @@ body {
 }
 
 .section h2 {
-    font-size: 36px; 
+    font-size: 30px; 
     color: #ab20fd;
     margin-bottom: 20px;
     border-bottom: 3px solid #ddd;
@@ -767,11 +767,6 @@ h3 {
 
 
 @media (max-width: 768px) {
-    h2{
-        font-size: 30px; 
-        color: red;
-    }
-
     .timeline {
         padding-left: 20px;
     }
