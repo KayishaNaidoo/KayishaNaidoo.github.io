@@ -792,7 +792,7 @@ h3 {
 
 
 
-@media (min-width: 769px) {
+@media (min-width: 601px) {
     .section h2 {
         font-size: 30px; 
     }
