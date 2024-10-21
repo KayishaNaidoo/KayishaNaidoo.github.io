@@ -767,6 +767,10 @@ h3 {
 
 
 @media (max-width: 768px) {
+    h2{
+        font-size: 30px; 
+    }
+    
     .timeline {
         padding-left: 20px;
     }
@@ -790,6 +794,9 @@ h3 {
 
 @media (min-width: 769px) {
 
+    h2{
+        font-size: 30px; 
+    }
     .career-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
