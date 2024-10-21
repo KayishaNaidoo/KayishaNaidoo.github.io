@@ -32,6 +32,12 @@
     src: url('../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf');
 }
 
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 a{
    text-decoration: none;
    color:  #ab20fd; 
@@ -122,7 +128,7 @@ h2 {
 /* Sidebar Styles */
 .sidebar {
     width: 250px;
-    background-color: #121212;
+    background-color: transparent;
     color: #fff;
     height: 100vh;
     position: fixed;
@@ -241,12 +247,12 @@ h2 {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background-color: #888; 
+    background-color: #ab20fd; 
     border-radius: 10px; 
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-    background-color: #555; 
+    background-color: #ab20fd; 
 }
 
 .sidebar::-webkit-scrollbar-track {
