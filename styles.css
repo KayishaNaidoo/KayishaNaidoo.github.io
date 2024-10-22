@@ -602,10 +602,6 @@ h3 {
 }
 
 
-.skill-container ul li a{
-    border-color: red;
-}
-
 .flip-front img {
     width: 80px; 
     height: 80px; 
@@ -660,7 +656,7 @@ h3 {
 }
 
 
-/* Mobile Responsive */
+
 @media (max-width: 600px) {
 
     body{
@@ -810,22 +806,21 @@ h3 {
     transform: translateY(-50%); /* Center the heart vertically */
 }
 
-/* styles.css */
 .contact-info {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between icons */
+    gap: 20px; 
 }
 
 .contact-icon {
-    color: #ab20fd; /* Icon color */
-    font-size: 24px; /* Icon size */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #ab20fd; 
+    font-size: 24px;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
 
 .contact-icon:hover {
-    color: #fff; /* Change color on hover */
+    color: #fff; 
 }
 
 
@@ -845,6 +840,7 @@ h3 {
     .timeline-item::before {
         left: -5px;
     }
+
 
     .career-section {
         grid-template-columns: 1fr; 
