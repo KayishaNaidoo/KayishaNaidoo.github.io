@@ -128,7 +128,7 @@ h2 {
 }
 
 
-/* Sidebar Styles */
+
 .sidebar {
     width: 250px;
     background-color: transparent;
@@ -217,7 +217,7 @@ h2 {
     border: 2px solid; 
     border-radius: 50px; 
     background-color: #1e1e1e;
-    box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D effect with shadow */
+    box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); 
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: all 0.2s ease;
@@ -230,7 +230,7 @@ h2 {
         transform: translateY(-2px); 
 }
 .sidebar nav ul li:active{
-    transform: translateY(4px); /* Button moves down on click */
+    transform: translateY(4px); 
     box-shadow: 0 2px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -244,7 +244,7 @@ h2 {
     transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 5px;
 }
-/* Style for Chrome, Safari, Edge */
+
 .sidebar::-webkit-scrollbar {
     width: 10px; 
 }
@@ -275,12 +275,12 @@ h2 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Ensure it is behind the content */
+    z-index: -1;
 }
 
 .content {
     position: relative;
-    z-index: 1; /* Ensure it is above the stars background */
+    z-index: 1; 
     text-align: center;
     padding: 50px;
     color: white;
@@ -348,8 +348,6 @@ h2 {
 }
 
 
-
-/* About Me Section Styles */
 .hobbies-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
@@ -423,7 +421,6 @@ h2 {
     margin: 10px 0 0;
 }
 
-/* Likes and Dislikes Containers */
 
 .likes-dislikes-container {
     display: flex;
@@ -504,7 +501,7 @@ h3 {
 
 .career-card h3 {
     font-family: 'Poppins-Bold', sans-serif;
-    font-size: 30px; /* Increased font size */
+    font-size: 30px; 
     color: #ab20fd;
     margin-bottom: 12px;
     text-align: center;
@@ -558,7 +555,7 @@ h3 {
     color: #ab20fd;
 }
 
-/* Skills Section */
+
 
 .skill-container {
 
@@ -667,14 +664,13 @@ h3 {
     }
 
     .profile-container {
-        flex-direction: column;   /* Stack text above the image */
-        align-items: flex-start; /* Align items to the start of the container */
+        flex-direction: column;  
+        align-items: flex-start; 
     }
 
     .title-image {
         width: 100%;   
-        height:auto;          /* Make the image responsive */
-     /* Set a max-width for the image */
+        height:auto;       
     }
 
     .skill-container {
@@ -739,19 +735,19 @@ h3 {
         outline: none;
     }
     
-    /* Hover Effect */
+ 
     .dropdown-toggle:hover {
         box-shadow: 0 5px 0 #ab20fd, 0 15px 30px rgba(0, 0, 0, 0.6); 
         transform: translateY(-2px); 
     }
     
-    /* Active (Clicked) Effect */
+
     .dropdown-toggle:active {
-        transform: translateY(4px); /* Button moves down on click */
+        transform: translateY(4px); 
         box-shadow: 0 2px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
     }
     
-    /* Glowing Effect */
+
     .dropdown-toggle:before {
         content: '';
         position: absolute;
@@ -787,24 +783,24 @@ h3 {
     padding: 10px 0;
     margin: 10px 0;
     border-left: 6px solid #ab20fd;
-    padding-left: 50px; /* Adjust based on the heart size */
+    padding-left: 50px; 
     animation: fadeInAnimation 1s ease-in-out;
 }
 
 .timeline-item::before {
     content: '\2764'; /* Unicode heart character */
-    font-size: 40px; /* Adjust size as needed */
-    color: #d496f8; /* Heart color */
+    font-size: 40px; 
+    color: #d496f8; 
     position: absolute;
     animation: beat 2s ease-in-out infinite;;
-    left: -13px; /* Adjust to position the heart correctly */
+    left: -13px;
     top: 0;
     width: 20px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-50%); /* Center the heart vertically */
+    transform: translateY(-50%); 
 }
 
 .contact-info {
