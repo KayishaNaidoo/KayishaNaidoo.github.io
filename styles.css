@@ -31,6 +31,10 @@
     font-family: "Handjet";
     src: url('../fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf');
 }
+@font-face {
+    font-family: "SourceCodePro";
+    src: url('../fonts/SourceCodePro.ttf');
+}
 
 canvas{
     position: fixed;
@@ -574,7 +578,7 @@ h3 {
 
 
 .skill-container li {
-   
+   font-family: 'SourceCodePro', sans-serif;
     display: grid;
     min-height: 200px;
     width: 90%; 
@@ -724,7 +728,6 @@ h3 {
         margin-bottom: 10px;
         padding: 12px 25px; 
         border: 2px solid; 
-         
         border-radius: 50px; 
         background-color: #1e1e1e;
         box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5); 
