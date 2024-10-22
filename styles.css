@@ -68,8 +68,7 @@ body {
     font-family: 'Poppins-Medium', sans-serif;
     margin: 0;
     padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+ 
     background-color: #121212;
     color: white;
     overflow-x: hidden;
@@ -368,7 +367,7 @@ h2 {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Optional: adds a slight movement */
+        transform: translateY(20px); 
     }
     to {
         opacity: 1;
@@ -483,7 +482,7 @@ h3 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     margin: 0 auto;
     position: relative; 
@@ -558,12 +557,12 @@ h3 {
 /* Skills Section */
 
 .skill-container {
+
     display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+    gap: 50px;
+    padding: 20px;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px;
-    padding: 20px 0;
-    margin: 0 auto;
 }
 
 .skill-container h3 {
@@ -572,39 +571,30 @@ h3 {
     color: #ab20fd;
     margin-bottom: 15px;
 }
-.skill-container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px;
-    padding: 20px 0;
-    max-width: 1200px;
+
+
+.skill-container li {
    
-}
-
-.skill-container ul {
     display: grid;
-    min-height: 400px;
-    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    min-height: 200px;
+    width: 90%; 
     gap: 20px;
-    padding: 20px 0;
-    list-style: none;
     margin: 0 auto;
-}
-
-.skill-container ul li {
+    list-style: none;
+    list-style-type: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
     padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 5px;
-    min-width: 50px;
-    overflow: hidden; 
-    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards; 
+    animation-delay: 0s;
 }
 
 
 .flip-front img {
-    width: 80px; 
-    height: 80px; 
+    width: 100%; 
+    height:100px; 
     object-fit: contain; 
 }
 
@@ -639,7 +629,7 @@ h3 {
 
 .flip-back {
     color: #fff;
-    background-color: #313131;
+    background-color: #282727;
     transform: rotateY(180deg); 
 }
 
@@ -683,6 +673,14 @@ h3 {
      /* Set a max-width for the image */
     }
 
+    .skill-container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
 
 
     .profile-img {
