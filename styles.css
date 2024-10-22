@@ -629,6 +629,7 @@ h3 {
 }
 
 .flip-back {
+    font-size: 10px;
     color: #fff;
     background-color: #282727;
     transform: rotateY(180deg); 
