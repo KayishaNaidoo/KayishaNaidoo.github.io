@@ -887,17 +887,7 @@ h3 {
         transform: rotateY(180deg); 
     }
 
-    .flip-back {
-        transform: rotateY(180deg);
-    }
     
-    .btn.flipped .flip-front {
-        transform: rotateY(180deg);
-    }
-    
-    .btn.flipped .flip-back {
-        transform: rotateY(0deg);
-    }
 
 
     .profile-img {
