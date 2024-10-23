@@ -40,8 +40,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all flip buttons
+    const flipButtons = document.querySelectorAll('.btn');
 
-// script.js
+    flipButtons.forEach(button => {
+        // Add a click event listener to each button
+        button.addEventListener('click', function() {
+            // Toggle the "flipped" class on click
+            this.classList.toggle('flipped');
+        });
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const canvas = document.getElementById('starsCanvas');
     const ctx = canvas.getContext('2d');
