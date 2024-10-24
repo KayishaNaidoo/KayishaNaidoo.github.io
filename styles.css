@@ -1092,6 +1092,9 @@ body.timeline {
         outline: none;
     }
 
+    .menu-items{
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    }
 
     .dropdown-toggle:hover {
         box-shadow: 0 5px 0 #ab20fd, 0 15px 30px rgba(0, 0, 0, 0.6);
@@ -1106,6 +1109,7 @@ body.timeline {
 
 
     .dropdown-toggle:before {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
         content: '';
         position: absolute;
         top: -5px;
