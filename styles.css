@@ -1074,6 +1074,7 @@ body.timeline {
 
 
     .dropdown-toggle {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
         font-size: large;
         font-family: 'Poppins-Medium', sans-serif;
         color: white;
