@@ -43,8 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-// script.js
 document.addEventListener('DOMContentLoaded', function () {
     const canvas = document.getElementById('starsCanvas');
     const ctx = canvas.getContext('2d');
