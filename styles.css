@@ -576,7 +576,7 @@ h3 {
 }
 
 .career-card li::marker {
-    content: '\2764';
+    content: '\2741';
     font-size: 20px;
 }
 
@@ -791,7 +791,7 @@ h3 {
     margin: 0 auto;
     list-style: none;
     list-style-type: none;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
     padding: 10px;
@@ -939,12 +939,11 @@ body.timeline {
 
 }
 .projects-container p{
+    margin-top: 0px;
     font-family: 'Poppins-Medium', sans-serif;
     font-size: 16px;
     color: #a4a4a4;
     text-align: left;
-
-  
 }
 
 .contact-info {
