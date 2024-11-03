@@ -757,6 +757,9 @@ h3 {
     font-size: 14px;
     color: #afafb6;
 }
+.contact-content .left-side .details .contactL1 a:hover {
+    color: #ae5ade;
+}
 
 .contact-content .left-side .details i {
     font-size: 40px;
@@ -1399,15 +1402,11 @@ body.timeline {
         margin-bottom: 12px;
         text-align: center;
     }
-    .contact-section{
-        align-items: center;
-        align-content: center;
-        margin-right: 10px;
-    }
 
     .contact-container {
-        margin: 40px 0;
-        width: 80%;
+       margin: auto;
+        width: 70%;
+
     }
 
     .contact-container .contact-content {
