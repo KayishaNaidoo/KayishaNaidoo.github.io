@@ -717,6 +717,7 @@ h3 {
     border-radius: 20px;
     padding: 20px 60px 40px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 
 .contact-container .contact-content {
@@ -745,6 +746,7 @@ h3 {
 .contact-container .contact-content .right-side {
     width: 70%;
     margin-left: 75px;
+    align-items: center;
    
 }
 
@@ -1434,7 +1436,6 @@ body.timeline {
       }
 
 }
-
 
 
 
