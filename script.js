@@ -11,7 +11,7 @@ document.addEventListener('scroll', function () {
 });
 
 // Toggle mobile menu visibility
-document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+document.querySelector('.dropdown-toggle').addEventListener('click', function () {
     const menuItems = document.querySelector('.menu-items');
     menuItems.classList.toggle('active');
 });
@@ -36,10 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', checkVisibility);
-    checkVisibility(); 
+    checkVisibility();
 });
-
-
 
 
 
@@ -52,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     canvas.height = window.innerHeight;
 
     // Star properties
-    const numStars = 100; // Number of stars
+    const numStars = 200; // Increased number of stars for more coverage
     const stars = [];
 
     // Initialize stars
@@ -61,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
             stars.push({
                 x: Math.random() * canvas.width,
                 y: Math.random() * canvas.height,
-                radius: Math.random() * 2,
-                velocityX: Math.random() * 0.5 - 0.25,
-                velocityY: Math.random() * 0.5 - 0.25,
+                radius: Math.random() * 2, // Random radius
+                velocityX: (Math.random() * 0.5 - 0.25) * 0.5, // Adjust velocity for subtle movement
+                velocityY: (Math.random() * 0.5 - 0.25) * 0.5, // Adjust velocity for subtle movement
                 alpha: Math.random()
             });
         }
@@ -71,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Draw stars
     function drawStars() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
         ctx.fillStyle = '#fff';
         stars.forEach(star => {
             ctx.globalAlpha = star.alpha;
@@ -87,8 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
             star.x += star.velocityX;
             star.y += star.velocityY;
 
-            if (star.x > canvas.width || star.x < 0) star.velocityX *= -1;
-            if (star.y > canvas.height || star.y < 0) star.velocityY *= -1;
+            // Wrap around the canvas edges
+            if (star.x > canvas.width) star.x = 0;
+            else if (star.x < 0) star.x = canvas.width;
+
+            if (star.y > canvas.height) star.y = 0;
+            else if (star.y < 0) star.y = canvas.height;
 
             // Adjust star opacity for twinkling effect
             star.alpha = Math.random();
@@ -112,5 +114,3 @@ document.addEventListener('DOMContentLoaded', function () {
     initStars();
     animate();
 });
-
-

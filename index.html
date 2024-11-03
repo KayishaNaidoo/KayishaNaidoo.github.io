@@ -13,6 +13,9 @@
 
 <body>
 
+
+
+
     <div class="sidebar">
         <img draggable="false" src="images/dogCalm.png" alt="KAYISHA NAIDOO" class="profile-img">
         <button class="dropdown-toggle">Menu</button>
@@ -56,6 +59,7 @@
             <p class="profile-sub">
                 A Computer Science student who combines art with logic.<br>
                 I aspire to be a <span id="gameDeveloper" class="game">GAME DEVELOPER</span> and I like designing stuff.
+
             </p>
         </section>
 
@@ -122,6 +126,18 @@
         <section id="experience" class="section ">
             <h2>Experience</h2>
             <div class="career-cards">
+                <div class="career-card">
+                    <h3>WITS Afretec</h3>
+                    <p class="role">Media and Software Developer</p>
+                    <img draggable="false" src="images/Roles/Afretec.jpg">
+
+                    <p class="description">
+                    <ul>
+                        <li>Making Designs for Stylish Imprints’ clients (Logos and imprints on vehicles)</li>
+                        <li>Website Development for Stylish Group</li>
+                    </ul>
+                    </p>
+                </div>
                 <div class="career-card">
                     <h3>Procurementor</h3>
                     <p class="role">Web Developer</p>
@@ -290,7 +306,10 @@
                         </span>
                     </a>
                     <h3>DinoGame</h3>
-                    <p>The chrome Dino Game is classic so I remade in Unity. Only difference is I drew all assets myself (in colour).</p>
+                    <p><span class="language">C#</span> <span class="ide">Unity 2D</span> <span
+                            class="topic">GameDev</span></p>
+                    <p>The chrome Dino Game is classic so I remade in Unity. Only difference is I drew all assets myself
+                        (in colour).</p>
                 </li>
                 <li>
                     <a>
@@ -303,6 +322,8 @@
                         </span>
                     </a>
                     <h3>WIP Website</h3>
+                    <p><span class="language">WebDev</span> <span class="ide">Wordpress</span> <span
+                            class="topic">Store</span></p>
                     <p>The Women in procurement website with Woocommerce intergrated for online purchases.</p>
                 </li>
                 <li>
@@ -316,6 +337,8 @@
                         </span>
                     </a>
                     <h3>BookIT</h3>
+                    <p><span class="language">C#</span> <span class="ide">Visual Studio</span> <span
+                            class="topic">Booking System</span></p>
                     <p>Information Systems Project to make a Venue booking system for WITS Venues.</p>
                 </li>
 
@@ -323,22 +346,71 @@
         </section>
 
 
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the options below or fill out the contact form!</p>
+          
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <a href="https://github.com/KayishaNaidoo" class="contact-icon" title="GitHub" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:naidookayisha8@gmail.com" class="contact-icon" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="http://www.linkedin.com/in/kayisha-naidoo-90a821270" class="contact-icon" target="_blank"
-                    title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+
+            <div class="contact-container">
+                <div class="contact-content">
+                    <div class="left-side">
+                        
+                        <div class="email details">
+                            <i class="fas fa-envelope"></i>
+                            <div class="topic-contact">Email</div>
+                            <div class="contactL1"><a href="mailto:naidookayisha8@gmail.com" title="Email"
+                                    target="_blank">
+                                    naidookayisha8@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="linkedin details">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="topic-contact">LinkedIn</div>
+                            <div class="contactL1"><a href="http://www.linkedin.com/in/kayisha-naidoo-90a821270"
+                                    title="LinkedIn" target="_blank">
+                                    Kayisha Naidoo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="github details">
+                            <i class="fab fa-github"></i>
+                            <div class="topic-contact">Github</div>
+                            <div class="contactL1"><a href="https://github.com/KayishaNaidoo" title="GitHub"
+                                    target="_blank">
+                                    KayishaNaidoo
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="right-side">
+                        <form action="#">
+                            <h3>Send me a message</h3>
+                            <div class="input-box">
+                                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+
+                            </div>
+                            <div class="input-box">
+                                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+                            </div>
+                            <div class="input-box message-box">
+                                <textarea name="message" id="message" placeholder="Enter your message"
+                                    required></textarea>
+
+                            </div>
+                            <div class="button">
+                                <input type="button" value="Send Message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
+
         </section>
+
 
 
 
