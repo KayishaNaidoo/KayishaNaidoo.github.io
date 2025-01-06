@@ -93,91 +93,138 @@
 
 
             <div class="likes-dislikes-container">
+               
                 <div class="likes-container">
                     <h3>Likes:</h3>
                     <ul>
-                        <li>Printing "Hello World!" in languages</li>
-                        <li>Making Donuts in Blender</li>
-                        <li>The word "occhiolism"</li>
-                        <li>Axolotls<br> ꒰(˶• ᴗ •˶)꒱</li>
-                        <li>Talking about my dog Sadie</li>
+                        <li class="tooltip">Printing "Hello World!"
+                            <span class="tooltip-text">First step in every language</span>
+                        </li>
+                        <li class="tooltip">Making Donuts in Blender
+                            <span class="tooltip-text">Blender Guru, our saviour</span>
+                        </li>
+                        <li class="tooltip">The word "occhiolism"
+                            <span class="tooltip-text">The awareness of the smallness of your perspective.</span>
+                        </li>
+                        <li class="tooltip">Axolotls
+                            <span class="tooltip-text"> ꒰(˶• ᴗ •˶)꒱</span>
+                        </li>
+                        <li class="tooltip">Talking about my dog
+                            <span class="tooltip-text">Her name is Sadie</span>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="dislikes-container">
                     <h3>Dislikes:</h3>
                     <ul>
-                        <li>Sand in hair after beach visits</li>
-                        <li>Cancer</li>
-                        <li>The warm side of the pillow</li>
-                        <li>Seafood<br>𓇼 ⋆.˚ 𓆉 𓆝 𓆉⋆.˚ 𓇼</li>
-                        <li>Cabbage <br>(unless in mutton curry)</li>
+                        <li class="tooltip">Sand in hair after beach visits
+                            <span class="tooltip-text">-_-</span>
+                        </li>
+                        <li class="tooltip">Cancer
+                            <span class="tooltip-text">A disease everyone hopes to eradicate.</span>
+                        </li>
+                        <li class="tooltip">The warm side of the pillow
+                            <span class="tooltip-text">Both sides are warm with Durban's heat</span>
+                        </li>
+                        <li class="tooltip">Seafood
+                            <span class="tooltip-text">Not everyone's taste!</span>
+                        </li>
+                        <li class="tooltip">Cabbage
+                            <span class="tooltip-text">Unless in mutton curry</span>
+                        </li>
                     </ul>
                 </div>
 
             </div>
+
         </section>
-
-
-        <section id="experience" class="section ">
+        <section id="experience" class="section">
             <h2>Experience</h2>
             <div class="career-cards">
+                <!-- Stylish Group Card -->
                 <div class="career-card">
-                    <h3>WITS Afretec</h3>
+                    <h3>Stylish Group</h3>
                     <p class="role">Media and Software Developer</p>
-                    <img draggable="false" src="images/Roles/Afretec.jpg">
-
+                    <img draggable="false" src="images/Roles/Afretec.jpg" alt="Stylish Group Image">
                     <p class="description">
-                    <ul>
-                        <li>Making Designs for Stylish Imprints’ clients (Logos and imprints on vehicles)</li>
-                        <li>Website Development for Stylish Group</li>
-                    </ul>
+                        As a Media and Software Developer at Stylish Group through the Afretec Internship, I contribute to creative and technical projects to support our clients' branding and digital presence.
                     </p>
+                    <button onclick="toggleDetails('stylish-details')">View Responsibilities</button>
+                    <div id="stylish-details" class="details" style="display: none;">
+                        <ul>
+                            <li><strong>Design Creation:</strong> Crafting logos and vehicle imprints for Stylish Imprints' clients, ensuring unique and impactful designs.</li>
+                            <li><strong>Website Development:</strong> Developing and maintaining websites for Stylish Group, enhancing online visibility and user engagement.</li>
+                            <li><strong>Collaborative Projects:</strong> Working closely with clients and internal teams to deliver high-quality media and software solutions tailored to their needs.</li>
+                            <li><strong>Innovation & Creativity:</strong> Leveraging creative skills and technical expertise to drive innovation in both design and software development.</li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Procurementor Card -->
                 <div class="career-card">
                     <h3>Procurementor</h3>
                     <p class="role">Web Developer</p>
-                    <img draggable="false" src="images/Roles/Procurementor.jpg">
-
+                    <img draggable="false" src="images/Roles/Procurementor.jpg" alt="Women In Procurement (WIP) Image">
                     <p class="description">
-                    <ul>
-                        <li> Developed and designed the Women In Procurement (WIP) website
-                            using WordPress and first principle coding. </li>
-                        <li>In charge of admin at physical events</li>
-                    </ul>
+                        As a Web Developer and Event Administrator for Women In Procurement (WIP), I was responsible for creating and maintaining the WIP website.
                     </p>
+                    <button onclick="toggleDetails('procurementor-details')">View Contributions</button>
+                    <div id="procurementor-details" class="details" style="display: none;">
+                        <ul>
+                            <li><strong>Website Development:</strong> Developed and designed the WIP website using WordPress and custom coding principles to ensure a user-friendly and visually appealing online presence.</li>
+                            <li><strong>Event Administration:</strong> Managed administrative tasks during physical events, ensuring smooth operations and an excellent experience for attendees.</li>
+                            <li><strong>Collaborative Teamwork:</strong> Worked closely with the WIP team to implement ideas and features that align with the goals of empowering women in procurement.</li>
+                            <li><strong>Content Management:</strong> Regularly updated and maintained the website, ensuring that all event information, announcements, and resources were readily accessible to visitors.</li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- WITS DevSoc Card -->
                 <div class="career-card">
                     <h3>WITS DevSoc</h3>
-                    <p class="role">Social Media TEAM LEAD</p>
-                    <img draggable="false" src="images/Roles/Devsoc.jpeg">
-
+                    <p class="role">HEAD</p>
+                    <img draggable="false" src="images/Roles/Devsoc.jpeg" alt="WITS DevSoc Image">
                     <p class="description">
-                    <ul>
-                        <li> Designed posters and advertisements for WITS Developer's society, AWS cloud club, IBM club,
-                            Microsoft club</li>
-                        <li> Planned and executed Career day festival and company events.</li>
-                    </ul>
+                        As the head of the Wits Developer Society, I lead initiatives to foster innovation and professional growth among students.
                     </p>
+                    <button onclick="toggleDetails('devsoc-details')">View Responsibilities</button>
+                    <div id="devsoc-details" class="details" style="display: none;">
+                        <ul>
+                            <li><strong>Leadership:</strong> Guiding the society's vision and aligning with industry trends.</li>
+                            <li><strong>Event Management:</strong> Planning key events like Career Day and networking sessions.</li>
+                            <li><strong>Design & Promotion:</strong> Creating promotional materials for our society and partner clubs.</li>
+                            <li><strong>Community Building:</strong> Organizing workshops, hackathons, and seminars to enhance skills.</li>
+                            <li><strong>Partnerships:</strong> Collaborating with tech companies and academic institutions to bring resources and opportunities to members.</li>
+                        </ul>
+                    </div>
                 </div>
-
+        
+                <!-- SetMind Card -->
                 <div class="career-card">
                     <h3>SetMind</h3>
                     <p class="role">Tutor</p>
-                    <img draggable="false" src="images/Logos/setmind_log.png">
-
+                    <img draggable="false" src="images/Logos/setmind_log.png" alt="SetMind Logo">
                     <p class="description">
-                    <ul>
-                        <li> Tutoring high school students in IT, Geography, Life Sciences, and Afrikaans.</li>
-                        <li> Great communication with students and always good feedback.</li>
-                    </ul>
+                        As a Tutor at SetMind, I provided academic support to high school students across various subjects, including IT, Geography, Life Sciences, and Afrikaans.
                     </p>
+                    <button onclick="toggleDetails('setmind-details')">View Responsibilities</button>
+                    <div id="setmind-details" class="details" style="display: none;">
+                        <ul>
+                            <li><strong>Tutoring:</strong> Offering tailored tutoring sessions in subjects to ensure students' academic growth and confidence.</li>
+                            <li><strong>Communication:</strong> Ensuring clear communication with students and parents, maintaining a positive learning environment, and receiving consistent feedback.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-
         </section>
-
+        
+        <script>
+            function toggleDetails(id) {
+                var element = document.getElementById(id);
+                element.style.display = element.style.display === "none" ? "block" : "none";
+            }
+        </script>
 
         <section id="education" class="section">
             <h2>Education</h2>
@@ -340,7 +387,8 @@
                 <li>
                     <a>
                         <span class="image-container">
-                            <img draggable="false" src="images/Projects/AxoltlAnimation.png" alt="Axoltl Animation Screenshot">
+                            <img draggable="false" src="images/Projects/AxoltlAnimation.png"
+                                alt="Axoltl Animation Screenshot">
                             <span class="projects-icon"
                                 onclick="window.open('https://youtu.be/SfQQq6NN3vU', '_blank');">
                                 <i class="fab fa-youtube"></i>
@@ -350,13 +398,13 @@
                     <h3>Mochi Animation</h3>
                     <p><span class="language">Animation</span> <span class="ide">Blender</span> <span
                             class="topic">Axoltl</span></p>
-                    <p>A cute short animation I made in blender of an Axoltl as a Mochi.</p>
+                    <p>A short animation I made in blender of an Axoltl as a Mochi.</p>
                 </li>
-                
+
 
             </div>
         </section>
-       
+
 
 
         <section id="contact" class="section contact-section">
