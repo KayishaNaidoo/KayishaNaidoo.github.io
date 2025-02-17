@@ -103,7 +103,7 @@ body {
 }
 
 .profile-sub {
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .game {
@@ -151,7 +151,7 @@ h2 {
   align-items: center;
   transition: all 0.3s ease;
   overflow-y: scroll;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .profile-img {
@@ -694,6 +694,7 @@ h3 {
 
 .contact-container {
   width: 90%;
+ 
   background: rgba(256, 256, 256, 0.05);
   border-radius: 20px;
   padding: 20px 60px 40px 40px;
@@ -1390,6 +1391,8 @@ body.timeline {
   }
 
   .contact-container {
+    display: flex;
+    align-items: center;
     margin: auto;
     width: 70%;
   }
