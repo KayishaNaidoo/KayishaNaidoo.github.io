@@ -532,10 +532,6 @@ h2 {
 .dislikes-container {
   width: 45%;
 }
-.likes-container ul {
-  list-style-type: none;
-  padding: 0;
-}
 
 .tooltip {
   position: relative;
@@ -583,9 +579,8 @@ h3 {
 .dislikes-container li {
   margin-bottom: 10px;
   padding: 10px;
-  background-color: transparent;
-  border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.01);
+  border-radius: 50px;
   box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -694,7 +689,7 @@ h3 {
 
 .contact-container {
   width: 90%;
- 
+
   background: rgba(256, 256, 256, 0.05);
   border-radius: 20px;
   padding: 20px 60px 40px 40px;
@@ -712,6 +707,7 @@ h3 {
   width: 30%;
   height: 100%;
   position: relative;
+  align-items: center;
 }
 
 .contact-container .contact-content .left-side::before {
@@ -734,6 +730,8 @@ h3 {
 .contact-content .left-side .details {
   margin: 14px;
   text-align: center;
+  border: 1px solid #ab20fd;
+  padding: 5px;
 }
 
 .contact-content .left-side .details .contactL1 a {
@@ -821,7 +819,7 @@ button:active {
   transform: translateY(0.5px); /* Slightly reduced active transform */
 }
 
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-size: large;
   font-family: "Poppins-Medium", sans-serif;
@@ -840,17 +838,17 @@ button:active {
   outline: none;
 }
 
-.right-side .button input[type="button"]:hover {
+.right-side .button input[type="submit"]:hover {
   box-shadow: 0 5px 0 #ab20fd, 0 15px 30px rgba(0, 0, 0, 0.6);
   transform: translateY(-2px);
 }
 
-.right-side .button input[type="button"]:active {
+.right-side .button input[type="submit"]:active {
   transform: translateY(4px);
   box-shadow: 0 2px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.right-side .button input[type="button"]:before {
+.right-side .button input[type="submit"]:before {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   content: "";
   position: absolute;
@@ -969,7 +967,7 @@ button:active {
   transform: translateY(-5px);
 }
 
-.education-container {
+.education-container ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   gap: 20px;
@@ -977,11 +975,10 @@ button:active {
   align-items: center;
 }
 
-.education-container li {
+.education-container ul li {
   background: rgb(127, 0, 173, 0.2);
+  border: none;
   border-radius: 50px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   display: grid;
@@ -1238,7 +1235,7 @@ body.timeline {
     margin: 0 auto;
   }
 
-  .education-container {
+  .education-container ul {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(1, 1fr);
@@ -1404,6 +1401,7 @@ body.timeline {
   .contact-container .contact-content .left-side {
     width: 100%;
     flex-direction: row;
+
     justify-content: center;
     margin-top: 40px;
   }
@@ -1424,7 +1422,7 @@ body.timeline {
 
 @media (min-width: 1001px) {
   .section h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .career-section {
