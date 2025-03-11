@@ -682,6 +682,16 @@ h3 {
   justify-content: center;
 }
 
+.contact-form {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+}
+
 .right-side .input-box {
   display: flex;
   justify-content: center;
@@ -1191,6 +1201,7 @@ body.timeline {
 
 .projects-icon:hover {
   background-color: #ab20fd;
+  transform: scale(1.1);
 }
 .projects-icon:active {
   transform: translateY(4px);
