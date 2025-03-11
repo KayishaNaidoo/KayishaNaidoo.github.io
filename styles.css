@@ -675,90 +675,6 @@ h3 {
   text-align: left;
   border: 0px;
 }
-/* 
-.contact-info a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.contact-info a:hover {
-  color: #ab20fd;
-  align-self: center;
-}
-
-.contact-container {
-  width: 90%;
-
-  background: rgba(256, 256, 256, 0.05);
-  border-radius: 20px;
-  padding: 20px 60px 40px 40px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  align-items: center;
-}
-
-.contact-container .contact-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contact-container .contact-content .left-side {
-  width: 30%;
-  height: 100%;
-  position: relative;
-  align-items: center;
-}
-
-.contact-container .contact-content .left-side::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 70%;
-  top: 50%;
-  right: -15px;
-  transform: translateY(-50%);
-  background: #ab20fd;
-}
-
-.contact-container .contact-content .right-side {
-  width: 70%;
-  margin-left: 75px;
-  align-items: center;
-}
-
-.contact-content .left-side .details {
-  margin: 14px;
-  text-align: center;
-  border: 1px solid #ab20fd;
-  padding: 5px;
-}
-
-.contact-content .left-side .details .contactL1 a {
-  font-size: 14px;
-  color: #afafb6;
-}
-.contact-content .left-side .details .contactL1 a:hover {
-  color: #ae5ade;
-}
-
-.contact-content .left-side .details i {
-  font-size: 40px;
-  color: #ab20fd;
-}
-
-.contact-content .left-side .details .topic-contact {
-  font-size: 18px;
-  font-family: "Poppins-Bold", sans-serif;
-  margin-bottom: 10px;
-}
-
-.contact-content .right-side h3 {
-  font-size: 30px;
-  color: white;
-  font-weight: 600;
-  font-family: "Poppins-Bold", sans-serif;
-} */
 
 .contact-content {
   display: flex;
@@ -1240,6 +1156,7 @@ body.timeline {
   background-color: rgb(51, 8, 119);
   color: white;
   border-radius: 20px;
+
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1256,18 +1173,27 @@ body.timeline {
   min-width: 30px;
   bottom: 10px;
   left: 10px;
-  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  padding: 12px 25px;
+  border: 2px solid;
+  border-radius: 50px;
+  background-color: #1e1e1e;
+  box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
   border-radius: 50%;
   padding: 15px;
   font-size: 20px;
-  color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
 .projects-icon:hover {
-  transform: scale(0.9);
+  background-color: #ab20fd;
+}
+.projects-icon:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .projects-icon i {
