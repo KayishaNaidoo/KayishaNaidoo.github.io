@@ -432,7 +432,7 @@ h2 {
   margin-bottom: 10px;
   padding: 15px;
   border: 1px solid;
-  border-image: WHITE;
+
   border-radius: 0;
 }
 
@@ -675,7 +675,7 @@ h3 {
   text-align: left;
   border: 0px;
 }
-
+/* 
 .contact-info a {
   color: white;
   text-decoration: none;
@@ -758,12 +758,21 @@ h3 {
   color: white;
   font-weight: 600;
   font-family: "Poppins-Bold", sans-serif;
+} */
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-side .input-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   height: 50px;
-  width: 100%;
-  margin: 20px 0;
+  width: 90%;
+  margin: 20px;
 }
 
 .right-side .input-box input,
@@ -786,6 +795,102 @@ h3 {
 
 .right-side .button {
   margin-top: 12px;
+}
+
+.contact-content .left-side .details i {
+  background-color: #ab20fd;
+  font-size: 40px;
+  min-width: 40px;
+  color: rgb(25, 24, 24);
+  border: 1px solid #111112;
+  padding: 5px;
+  border-radius: 20%;
+}
+.contact-content .left-side .details i:hover {
+  animation: float 0.5s infinite;
+  transform: scale(0.9);
+  background-color: transparent;
+  font-size: 40px;
+  color: #ab20fd;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-container {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; /* Ensures full centering */
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  flex: 1;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.details a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.right-side {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.message-box textarea {
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-side {
+    align-items: center;
+  }
 }
 
 button {
@@ -882,9 +987,7 @@ button:active {
   background: rgba(147, 141, 141, 0.1);
   border-radius: 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  /* Border on the top */
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  /* Border on the left */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   font-family: "SourceCodePro", sans-serif;
@@ -1193,6 +1296,15 @@ body.timeline {
 }
 
 @media (max-width: 1000px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-side {
+    align-items: center;
+  }
   body {
     padding: 20px;
     align-items: center;
