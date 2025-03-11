@@ -801,17 +801,30 @@ h3 {
   background-color: #ab20fd;
   font-size: 40px;
   min-width: 40px;
-  color: rgb(25, 24, 24);
   border: 1px solid #111112;
   padding: 5px;
   border-radius: 20%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: white;
+  margin-bottom: 10px;
+  padding: 12px 25px;
+  border: 2px solid;
+  border-radius: 50px;
+  background-color: #1e1e1e;
+  box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.2s ease;
+
+  outline: none;
 }
+
 .contact-content .left-side .details i:hover {
-  animation: float 0.5s infinite;
-  transform: scale(0.9);
-  background-color: transparent;
-  font-size: 40px;
-  color: #ab20fd;
+  box-shadow: 0 5px 0 #ab20fd, 0 15px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
+.contact-content .left-side .details i:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .contact-section {
@@ -896,17 +909,17 @@ form {
 button {
   align-items: center;
   justify-content: center;
-  font-size: medium; /* Reduced font size */
+  font-size: medium;
   font-family: "Poppins-Medium", sans-serif;
   color: white;
-  margin-bottom: 8px; /* Slightly smaller margin */
-  padding: 10px 25px; /* Reduced padding */
+  margin-bottom: 8px;
+  padding: 10px 25px;
   border: 2px solid;
-  border-radius: 45px; /* Slightly smaller border-radius */
+  border-radius: 45px;
   background-color: #2c2c2c;
-  box-shadow: 0 4px 0 #9c22ff, 0 8px 16px rgba(0, 0, 0, 0.4); /* Reduced box-shadow size */
+  box-shadow: 0 4px 0 #9c22ff, 0 8px 16px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
-  letter-spacing: 1.6px; /* Slightly reduced letter spacing */
+  letter-spacing: 1.6px;
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
@@ -915,8 +928,8 @@ button {
 
 button:hover {
   background-color: #9c22ff;
-  box-shadow: 0 4px 0 #2c2c2c, 0 10px 20px rgba(0, 0, 0, 0.5); /* Adjusted shadow for hover */
-  transform: translateY(-2px); /* Slightly smaller hover transform */
+  box-shadow: 0 4px 0 #2c2c2c, 0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
 }
 
 button:active {
