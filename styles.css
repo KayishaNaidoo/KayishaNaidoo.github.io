@@ -735,7 +735,8 @@ h3 {
 }
 
 .contact-content .left-side .details i:hover {
-  box-shadow: 0 5px 0 #ab20fd, 0 15px 30px rgba(0, 0, 0, 0.6);
+  background-color: #670f9b;
+
   transform: translateY(-2px);
 }
 .contact-content .left-side .details i:active {
@@ -1228,10 +1229,6 @@ body.timeline {
   font-size: 35px;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.contact-icon:hover {
-  color: #fff;
 }
 
 @media (max-width: 1000px) {
