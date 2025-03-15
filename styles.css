@@ -768,7 +768,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto; /* Ensures full centering */
+  margin: auto;
 }
 
 .left-side {
@@ -822,6 +822,9 @@ form {
 }
 
 @media (max-width: 768px) {
+  .contact-content .left-side .details i {
+    font-size: 25px;
+  }
   .contact-container {
     display: flex;
     justify-content: center;
