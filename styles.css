@@ -824,6 +824,7 @@ form {
 @media (max-width: 768px) {
   .contact-content .left-side .details i {
     font-size: 25px;
+    min-width: 25px;
   }
   .contact-container {
     display: flex;
