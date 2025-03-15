@@ -728,8 +728,6 @@ h3 {
   font-size: 40px;
   min-width: 40px;
   border: 1px solid #111112;
-  padding: 5px;
-  border-radius: 20%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: white;
   margin-bottom: 10px;
@@ -738,14 +736,11 @@ h3 {
   border-radius: 50px;
   background-color: #1e1e1e;
   box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
-
   transition: all 0.2s ease;
-
-  outline: none;
 }
 
 .contact-content .left-side .details i:hover {
-  background-color: #670f9b;
+  background-color: #ab20fd;
 
   transform: translateY(-2px);
 }
@@ -823,8 +818,9 @@ form {
 
 @media (max-width: 768px) {
   .contact-content .left-side .details i {
-    font-size: 25px;
-    min-width: 25px;
+    font-size: 20px;
+    min-width: 20px;
+    padding: 12px 12px;
   }
   .contact-container {
     display: flex;
