@@ -43,6 +43,11 @@
   src: url("../fonts/Afacad.ttf");
 }
 
+@font-face {
+  font-family: "Kayisha";
+  src: url("../fonts/Kayisha2-Regular.ttf");
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -103,6 +108,12 @@ body {
 }
 
 .profile-sub {
+  font-family: "Kayisha";
+  font-size: 25px;
+}
+
+.profile-text {
+  font-family: "Kayisha";
   font-size: 17px;
 }
 
