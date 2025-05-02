@@ -48,10 +48,6 @@
   src: url("../fonts/Kayisha2-Regular.ttf");
 }
 
-body {
-  background-color: red !important;
-}
-
 canvas {
   position: fixed;
   top: 0;
