@@ -549,6 +549,10 @@ h2 {
   cursor: pointer;
 }
 
+.tooltip a {
+  color: white;
+}
+
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 200px;
@@ -591,7 +595,7 @@ h3 {
   margin-bottom: 10px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.01);
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 0 5px 0 #7d12ff, 0 10px 20px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -603,7 +607,7 @@ h3 {
 
 .likes-container li:hover,
 .dislikes-container li:hover {
-  background-color: #333;
+  background-color: #8000ad;
 }
 
 .career-card li::marker {
@@ -1076,13 +1080,10 @@ body.timeline {
 }
 
 .timeline-item::before {
-  content: "\2740";
-  /*//Unicode for flower */
+  content: "\2740"; /*//Unicode for flower */
   font-size: 50px;
   color: #d496f8;
-
   position: absolute;
-  animation: beat 2s ease-in-out infinite;
   left: -13px;
   top: 0;
   width: 20px;
