@@ -92,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    stars.length = 0;
+    initStars();
   });
 
   initStars();
