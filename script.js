@@ -98,4 +98,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initStars();
   animate();
+
+  // Sparkle cursor trail effect
+  let lastSparkleTime = 0;
+  const sparkleDelay = 30; // milliseconds between sparkles
+
+  document.addEventListener("mousemove", function (e) {
+    const currentTime = Date.now();
+
+    // Only create sparkles if enough time has passed
+    if (currentTime - lastSparkleTime > sparkleDelay) {
+      createSparkle(e.pageX, e.pageY);
+      lastSparkleTime = currentTime;
+    }
+  });
+
+  function createSparkle(x, y) {
+    const sparkle = document.createElement("div");
+    sparkle.className = "sparkle";
+
+    // Random star symbol
+    const stars = ["✨", "⭐", "🌟", "💫", "✦", "★"];
+    sparkle.textContent = stars[Math.floor(Math.random() * stars.length)];
+
+    // Random size
+    const size = Math.random() * 10 + 10;
+    sparkle.style.fontSize = size + "px";
+
+    // Position at cursor
+    sparkle.style.left = x + "px";
+    sparkle.style.top = y + "px";
+
+    // Random rotation
+    sparkle.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+    document.body.appendChild(sparkle);
+
+    // Remove sparkle after animation completes
+    setTimeout(() => {
+      sparkle.remove();
+    }, 800);
+  }
 });

@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <div class="sidebar">
@@ -627,30 +631,7 @@
             </p>
             <p>A short animation I made in blender of an Axoltl as a Mochi.</p>
           </li>
-          <li>
-            <a>
-              <span class="image-container">
-                <img
-                  draggable="false"
-                  src="images/Projects/AkaiImages.png"
-                  alt="Akai App Images"
-                />
-              </span>
-            </a>
-            <h3>Akai (Period App)</h3>
-            <p>
-              <span class="language">Dart</span>
-              <span class="ide">Flutter</span>
-              <span class="topic">SocialGood</span>
-            </p>
-            <p>
-              A Flutter app built in a 2-day hackathon by my team, where I was
-              the designer and UI developer, enabling female students to request
-              emergency pads, track their period, and connect with nearby
-              verified peers through WITS email authentication and ID
-              verification for safety.
-            </p>
-          </li>
+
           <li>
             <a>
               <span class="image-container">
@@ -705,7 +686,32 @@
             <p>
               A 3D game built with Three.js featuring an axolotl navigating
               through action-filled levels. Combines 3D graphics with engaging
-              gameplay mechanics.
+              gameplay mechanics. My favourite part was remodelling and
+              animating the axoltl.
+            </p>
+          </li>
+          <li>
+            <a>
+              <span class="image-container">
+                <img
+                  draggable="false"
+                  src="images/Projects/AkaiImages.png"
+                  alt="Akai App Images"
+                />
+              </span>
+            </a>
+            <h3>Akai (Period App)</h3>
+            <p>
+              <span class="language">Dart</span>
+              <span class="ide">Flutter</span>
+              <span class="topic">SocialGood</span>
+            </p>
+            <p>
+              A Flutter app built in a 2-day hackathon by my team, where I was
+              the designer and UI developer, enabling female students to request
+              emergency pads, track their period, and connect with nearby
+              verified peers through WITS email authentication and ID
+              verification for safety.
             </p>
           </li>
         </div>
@@ -788,28 +794,47 @@
               </div>
             </form>
             <script>
-              const form = document.querySelector("form");
-              form.addEventListener("submit", async (e) => {
+              // Initialize EmailJS with your public key
+              (function () {
+                emailjs.init("QYnuxJWnRuezySsUv");
+              })();
+
+              const form = document.querySelector(".contact-form");
+              const submitButton = form.querySelector('input[type="submit"]');
+
+              form.addEventListener("submit", function (e) {
                 e.preventDefault();
-                const name = document.getElementById("name").value;
-                const email = document.getElementById("email").value;
-                const message = document.getElementById("message").value;
-                const response = await fetch(
-                  "http://localhost:3000/postendpoint",
-                  {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                      name,
-                      email,
-                      message,
-                    }),
+
+                // Disable submit button and show loading state
+                submitButton.value = "Sending...";
+                submitButton.disabled = true;
+
+                // Send email using EmailJS
+                emailjs.sendForm("Kayisha", "template_1pbwvbs", form).then(
+                  function (response) {
+                    submitButton.value = "Message Sent!";
+                    submitButton.style.backgroundColor = "#4CAF50";
+                    form.reset();
+
+                    // Reset button after 3 seconds
+                    setTimeout(function () {
+                      submitButton.value = "Send Message";
+                      submitButton.disabled = false;
+                      submitButton.style.backgroundColor = "";
+                    }, 3000);
+                  },
+                  function (error) {
+                    submitButton.value = "Failed to Send";
+                    submitButton.style.backgroundColor = "#f44336";
+
+                    // Reset button after 3 seconds
+                    setTimeout(function () {
+                      submitButton.value = "Send Message";
+                      submitButton.disabled = false;
+                      submitButton.style.backgroundColor = "";
+                    }, 3000);
                   }
                 );
-                const data = await response.json();
-                console.log(data);
               });
             </script>
           </div>

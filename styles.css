@@ -8,6 +8,28 @@
   }
 }
 
+.sparkle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  animation: sparkleAnimation 0.8s ease-out forwards;
+}
+
+@keyframes sparkleAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 20px) scale(0.5) rotate(360deg);
+  }
+}
+
 @font-face {
   font-family: "Poppins-Bold";
   src: url("../fonts/Poppins-ExtraBold.ttf");
