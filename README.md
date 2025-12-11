@@ -9,9 +9,9 @@
 
 ### Creative Frontend Developer • Aspiring Full-Stack Developer • UI/UX Enthusiast
 
-```
-    ᗧ • • • • • • • • • • • • • • 👻
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kayishanaidoo/kayishanaidoo/main/images/Pacman.gif" alt="Pac-Man animation" />
+</p>
 
 </div>
 
