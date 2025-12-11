@@ -5,7 +5,7 @@
 
 <div align="center">
   
-# Kayisha Naidoo ꒰(˶• ᴗ •˶)꒱
+#꒰(˶• ᴗ •˶)꒱
 
 ### Creative Frontend Developer • Aspiring Full-Stack Developer • UI/UX Enthusiast
 
@@ -108,9 +108,10 @@ I like making stuff, and then making it look pretty. I build clean, intuitive in
 
 
 
-*Thanks for stopping by* 🌌
+*Enjoy your day*
 
 </div>
+
 
 
 
