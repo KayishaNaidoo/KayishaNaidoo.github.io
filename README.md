@@ -5,7 +5,7 @@
 
 <div align="center">
   
-# 🌌 Kayisha Naidoo 🦎
+# Kayisha Naidoo ꒰(˶• ᴗ •˶)꒱
 
 ### Creative Frontend Developer • Aspiring Full-Stack Developer • UI/UX Enthusiast
 
@@ -25,7 +25,7 @@ My coding style is equal parts structure, curiosity, and chaos that somehow alwa
 
 ---
 
-## 🌠 Connect with Me
+## 🔌Connect with Me
 
 <p align="left">
   <a href="https://www.linkedin.com/in/kayisha-naidoo-90a821270/" target="_blank">
@@ -47,7 +47,7 @@ My coding style is equal parts structure, curiosity, and chaos that somehow alwa
   <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="45" height="45" title="Tailwind CSS"/>
 </p>
 
-### 🌌 Backend
+### ⚙️ Backend
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" width="45" height="45" title=".NET"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="45" height="45" title="Node.js"/>
@@ -81,18 +81,18 @@ My coding style is equal parts structure, curiosity, and chaos that somehow alwa
 
 ## 🎮 Hobbies
 
-- Talking About My Dog
-- Origami
+- Talking About My Dog („• ֊ •„)੭
+- Origami 𓅯
 - Game development (Unity and prototypes)
-- Blender
-- Learning new stacks and poking at new frameworks until they make sense
+- Blender 
+- Learning new stacks and tackling at new frameworks until they make sense
 
 ---
 
 ## 🌟 Fun Facts
 
 - I love building things that are functional but still have personality
-- I love Axolotls 🦎
+- I love Axolotls ᓬ(•̀ - •́)ᕒ
 - I'm a Cancer survivor
 - I love video games, but don't play any competitive ones
 
@@ -113,3 +113,4 @@ My coding style is equal parts structure, curiosity, and chaos that somehow alwa
 *Thanks for stopping by* 🌌
 
 </div>
+
