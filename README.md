@@ -8,9 +8,18 @@
 <br><br>
 
 <h1 align="center">Hi 👋, I'm <strong>Kayisha Naidoo</strong></h1>
-<h3 align="center">Frontend Developer • Designer • Code-Crafting Human</h3>
+<h3 align="center">Creative Frontend Developer • Aspiring Full-Stack Developer • UI/UX Enthusiast</h3>
 
 <br><br>
+
+## ✨ About Me
+- I build clean, intuitive interfaces that blend creativity with logic.  
+- I’m currently growing into full-stack development while still staying true to my design roots.  
+- I love creating projects that feel good to use and fun to interact with.  
+- My coding style is equal parts structure, curiosity, and chaos that somehow always compiles.  
+- I care about crafting experiences, not just applications.
+
+<br>
 
 ## 👩‍💻 Connect with me
 <p align="left">
@@ -22,44 +31,69 @@
 
 <br>
 
-## 🛠 Languages and Tools
+## 🛠 Tech Stack
 
 <p align="left">
-  <!-- Row 1 -->
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" width="45" height="45" />
-  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="45" height="45" />
+  <!-- Frontend -->
+  <strong>Frontend:</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" width="45" height="45"/>
+  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="45" height="45"/>
   <br><br>
 
-  <!-- Row 2 -->
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" width="45" height="45" />
+  <!-- Backend -->
+  <strong>Backend:</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="45" height="45"/>
   <br><br>
 
-  <!-- Row 3 -->
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="45" height="45" />
+  <!-- Languages -->
+  <strong>Languages:</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="45" height="45"/>
   <br><br>
 
-  <!-- Row 4 -->
-  <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="45" height="45" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" width="45" height="45" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" width="45" height="45" />
+  <!-- Databases -->
+  <strong>Databases:</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="45" height="45"/>
+  <br><br>
+
+  <!-- Tools -->
+  <strong>Tools & Extras:</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="45" height="45"/>
+  <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" width="45" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" width="45" height="45"/>
 </p>
 
 <br><br>
+
+## 🎮 Hobbies
+- Talking About My Dog
+- Origami
+- Game development (Unity and prototypes)
+- Blender
+- Learning new stacks and poking at new frameworks until they make sense  
+
+<br>
+
+## 🌟 Fun Facts
+- I love building things that are functional but still have personality.
+- I love Axolotls
+- I'm a Cancer survivor
+- I love video games, but don't play any competitive ones.
+
+<br>
 
 ## 📊 GitHub Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kayishanaidoo&show_icons=true&locale=en&layout=compact" alt="kayishanaidoo" />
 </p>
-
