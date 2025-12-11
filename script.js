@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sparkle.className = "sparkle";
 
     // Random star symbol
-    const stars = ["💜", "🪐", "✨"];
+    const stars = ["🪐", "✨"];
     sparkle.textContent = stars[Math.floor(Math.random() * stars.length)];
 
     // Random size
