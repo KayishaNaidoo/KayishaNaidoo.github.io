@@ -9,7 +9,9 @@
 
 ### Creative Frontend Developer • Aspiring Full-Stack Developer • UI/UX Enthusiast
 
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="snake animation" />
+```
+    ᗧ • • • • • • • • • • • • • • 👻
+```
 
 </div>
 
