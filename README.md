@@ -78,7 +78,7 @@ I like making stuff, and then making it look pretty. I build clean, intuitive in
 ---
 
 ## 🎮 Hobbies
-                        /^\ /^\
+
 - Talking About My Dog („• ֊ •„)੭
 - Origami 𓅯
 - Game development (Unity and prototypes)
@@ -111,5 +111,6 @@ I like making stuff, and then making it look pretty. I build clean, intuitive in
 *Thanks for stopping by* 🌌
 
 </div>
+
 
 
