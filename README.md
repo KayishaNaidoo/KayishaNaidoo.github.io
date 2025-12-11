@@ -19,9 +19,7 @@
 
 ## ✨ About Me
 
-I build clean, intuitive interfaces that blend creativity with logic. Currently growing into full-stack development while staying true to my design roots. I love creating projects that feel good to use and fun to interact with.
-
-My coding style is equal parts structure, curiosity, and chaos that somehow always compiles. I care about crafting experiences, not just applications.
+I like making stuff, and then making it look pretty. I build clean, intuitive interfaces that blend creativity with logic. Currently growing into full-stack development while staying true to my design roots. I love creating projects that feel good to use and fun to interact with.
 
 ---
 
@@ -80,7 +78,7 @@ My coding style is equal parts structure, curiosity, and chaos that somehow alwa
 ---
 
 ## 🎮 Hobbies
-
+                        /^\ /^\
 - Talking About My Dog („• ֊ •„)੭
 - Origami 𓅯
 - Game development (Unity and prototypes)
@@ -113,4 +111,5 @@ My coding style is equal parts structure, curiosity, and chaos that somehow alwa
 *Thanks for stopping by* 🌌
 
 </div>
+
 
