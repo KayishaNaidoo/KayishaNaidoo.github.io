@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,6 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
-
   </head>
   <body>
     <div class="sidebar">
@@ -348,34 +347,44 @@
               </ul>
             </div>
           </div>
-          <!-- SetMind Card -->
+          <!-- Entelect Card -->
           <div class="career-card">
-            <h3>SetMind</h3>
-            <p class="role">Tutor</p>
+            <h3>Entelect</h3>
+            <p class="role">Software Engineer</p>
             <img
               draggable="false"
-              src="images/Logos/setmind_log.png"
-              alt="SetMind Logo"
+              src="images/Roles/Entelect.jpg"
+              alt="Entelect Logo"
             />
             <p class="description">
-              As a Tutor at SetMind, I provided academic support to high school
-              students across various subjects, including IT, Geography, Life
-              Sciences, and Afrikaans.
+              As a Software Engineer at Entelect, I work on developing scalable
+              software solutions and contribute to innovative projects using
+              modern technologies and best practices.
             </p>
-            <button onclick="toggleDetails('setmind-details')">
+            <button onclick="toggleDetails('entelect-details')">
               View Responsibilities
             </button>
-            <div id="setmind-details" class="details" style="display: none">
+            <div id="entelect-details" class="details" style="display: none">
               <ul>
                 <li>
-                  <strong>Tutoring:</strong> Offering tailored tutoring sessions
-                  in subjects to ensure students' academic growth and
-                  confidence.
+                  <strong>Software Development:</strong> Building and
+                  maintaining high-quality software applications using
+                  industry-standard technologies and frameworks.
                 </li>
                 <li>
-                  <strong>Communication:</strong> Ensuring clear communication
-                  with students and parents, maintaining a positive learning
-                  environment, and receiving consistent feedback.
+                  <strong>Collaborative Development:</strong> Working with
+                  cross-functional teams to design, develop, and deploy software
+                  solutions that meet client requirements.
+                </li>
+                <li>
+                  <strong>Code Quality:</strong> Writing clean, maintainable
+                  code while following best practices and participating in code
+                  reviews.
+                </li>
+                <li>
+                  <strong>Problem Solving:</strong> Analyzing technical
+                  challenges and implementing effective solutions to deliver
+                  value to clients.
                 </li>
               </ul>
             </div>
@@ -397,7 +406,7 @@
               <a class="btn">
                 <span class="flip-front"
                   >BSc IN COMPUTER SCIENCE <br />
-                  University of the Witwatersrand <br />[ 2022 - Present ]
+                  University of the Witwatersrand <br />[ 2022 - 2025 ]
                 </span>
                 <span class="flip-back">
                   <img
@@ -537,7 +546,12 @@
                 />
                 <span
                   class="projects-icon"
-                  onclick="window.open('https://play.unity.com/en/games/e559f992-c4f6-4994-ad59-540947251091/chrome-dino', '_blank');"
+                  onclick="
+                    window.open(
+                      'https://play.unity.com/en/games/e559f992-c4f6-4994-ad59-540947251091/chrome-dino',
+                      '_blank',
+                    )
+                  "
                 >
                   <i class="fab fa-unity"></i>
                 </span>
@@ -564,7 +578,12 @@
                 />
                 <span
                   class="projects-icon"
-                  onclick="window.open('https://www.womeninprocurementsa.co.za/', '_blank');"
+                  onclick="
+                    window.open(
+                      'https://www.womeninprocurementsa.co.za/',
+                      '_blank',
+                    )
+                  "
                 >
                   <i class="fa fa-link"></i>
                 </span>
@@ -591,7 +610,12 @@
                 />
                 <span
                   class="projects-icon"
-                  onclick="window.open('https://github.com/KayishaNaidoo/BookIT.git', '_blank');"
+                  onclick="
+                    window.open(
+                      'https://github.com/KayishaNaidoo/BookIT.git',
+                      '_blank',
+                    )
+                  "
                 >
                   <i class="fab fa-github"></i>
                 </span>
@@ -618,7 +642,12 @@
                 />
                 <span
                   class="projects-icon"
-                  onclick="window.open('https://youtu.be/VFx2An4IQZs?si=ntkAoTxr6XDMlBdI&t=940', '_blank');"
+                  onclick="
+                    window.open(
+                      'https://youtu.be/VFx2An4IQZs?si=ntkAoTxr6XDMlBdI&t=940',
+                      '_blank',
+                    )
+                  "
                 >
                   <i class="fab fa-youtube"></i>
                 </span>
@@ -643,7 +672,12 @@
                 />
                 <span
                   class="projects-icon"
-                  onclick="window.open('https://github.com/Girls-Girls-Inc/wits-quest', '_blank');"
+                  onclick="
+                    window.open(
+                      'https://github.com/Girls-Girls-Inc/wits-quest',
+                      '_blank',
+                    )
+                  "
                 >
                   <i class="fab fa-github"></i>
                 </span>
@@ -672,7 +706,12 @@
                 />
                 <span
                   class="projects-icon"
-                  onclick="window.open('https://youtu.be/VFx2An4IQZs?si=cHpusqBGCtOgfjBT&t=867', '_blank');"
+                  onclick="
+                    window.open(
+                      'https://youtu.be/VFx2An4IQZs?si=cHpusqBGCtOgfjBT&t=867',
+                      '_blank',
+                    )
+                  "
                 >
                   <i class="fab fa-youtube"></i>
                 </span>
@@ -795,7 +834,6 @@
               </div>
             </form>
             <script>
-              // Initialize EmailJS with your public key
               (function () {
                 emailjs.init("QYnuxJWnRuezySsUv");
               })();
@@ -834,7 +872,7 @@
                       submitButton.disabled = false;
                       submitButton.style.backgroundColor = "";
                     }, 3000);
-                  }
+                  },
                 );
               });
             </script>
